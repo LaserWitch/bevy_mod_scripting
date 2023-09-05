@@ -61,9 +61,9 @@ rhai_script_api=["bevy_script_api/rhai"]
 [dependencies]
 bevy = { git="https://github.com/bevyengine/bevy.git", rev="d516a27", default-features = false}
 bevy_mod_scripting_core = { path = "bevy_mod_scripting_core", version = "0.3.0" }
-bevy_mod_scripting_lua = { path = "languages/bevy_mod_scripting_lua", version = "0.3.0", optional = true }
-bevy_mod_scripting_rhai = { path = "languages/bevy_mod_scripting_rhai", version = "0.3.0", optional = true}
-bevy_script_api = { path = "bevy_script_api", version = "0.3.0", optional = true }
+bevy_mod_scripting_lua = { path = "languages/bevy_mod_scripting_lua", optional = true }
+bevy_mod_scripting_rhai = { path = "languages/bevy_mod_scripting_rhai", optional = true}
+bevy_script_api = { path = "bevy_script_api", optional = true }
 
 [dev-dependencies]
 bevy = { git="https://github.com/bevyengine/bevy.git", rev="d516a27"}
